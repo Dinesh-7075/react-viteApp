@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 10px 25px 0 25px;
+    background-color: #FCFCFD;
+    color: #333;
+    max-width: fit-content;
+}
+
+a {
+    font-weight: 400;
+    color: #12B76A;
+    /* text-decoration: inherit; */
+}
+
+/* a:hover {
+    color: #14C38E;
+} */
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    color:#12B76A;
+    font-weight: 300;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #dbff64;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    /* a:hover {
+        color:#12B76A;
+    } */
+
+    button {
+        background-color: #12B76A;
+    }
+}
+  .markdown-content {
+    padding: 10px; 
+  }
+  
+/* Style for the container with the scrollbar */
+.markdown-container {
+    max-height: 90vh; 
+    overflow-y: auto;
+    position: absolute;
+    left: 20%;
+  }
+  
+  /* Track (the background of the scrollbar) */
+  .markdown-container::-webkit-scrollbar {
+    width: 6px; 
+    height: 2px;
+  }
+    
+  /* Optional: Handle (the top and bottom arrows of the scrollbar) */
+  /* .markdown-container::-webkit-scrollbar-button {
+    display: none; 
+  } */
+  .vertical-line {
+    width: 4px; /* Set the desired width */
+    /* background-color: #ff0000;  */
+    height: 100%; /* Make the line extend the full height of its container */
+  }
+
+  @media only screen and (max-width:600px)  {
+    .markdown-container {
+        max-height: 90vh; 
+        overflow-y: auto;
+        position: absolute;
+        width:100%;
+        left: 0;
+      }
+  }
+
+  

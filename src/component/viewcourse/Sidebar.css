@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+
+.app-container {
+  display: flex;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  position: absolute; /* changed relative to absolute */
+}
+
+.sidebar-container {
+  /* CSS by Dinesh */
+  position: fixed;
+  height: 100%;
+  top: 12%;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-height: 100vh;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 5px 16px;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+  padding: 5px 16px;
+  color: #12b76a;
+  border-radius: 5px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to code blocks */
+/* .code-block {
+    background-color: #636161;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Fredoka', sans-serif;
+    overflow: auto;
+} */
+
+/* Apply styles to code within code blocks */
+/* .code-block code {
+    display: block;
+    white-space: pre-wrap;
+} */
+
+/* markdownStyles.css */
+.markdown-container {
+  /* Add your styles here */
+  text-align: left;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  /* Styles for headings */
+  color: #000000;
+  font-weight: 500;
+}
+
+.markdown-container p {
+  /* Styles for paragraphs */
+  color: #000000;
+}
+
+.markdown-container pre {
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: auto;
+  color: whitesmoke;
+}
+
+.markdown-container code {
+  font-family: "Fredoka", sans-serif;
+}
+
+.markdown-container .keyword {
+  color: blue;
+  /* Customize the color for keywords */
+}
+
+.markdown-container .string {
+  color: #12b76a;
+  /* Customize the color for strings */
+}
+
+.markdown-container .comment {
+  color: gray;
+  /* Customize the color for comments */
+}
+
+/* Add more specific styles for other Markdown elements as needed */
+
+/* Sidebar.css */
+
+/* Style for the container with the scrollbar */
+.sidebar-scroll-container {
+  max-height: 100%; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Thin scrollbar (supported in Firefox) */
+  scrollbar-color: #767676 transparent; /* Scrollbar color */
+}
+
+.sidebar-scroll-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px;
+  background-color: transparent; /* Make the scrollbar track transparent */
+}
+
+.sidebar-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #12b76a; /* Thumb color */
+  border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+.sidebar-scroll-container::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons */
+}
+
+.sidebar-scroll-container:hover::-webkit-scrollbar-thumb {
+  background-color: #0e8854; /* Darker thumb color on hover */
+}
+
+/* Added CSS from Here */
+
+.active {
+  color: rgb(72, 228, 72);
+}
+
+.inactive {
+  color: black;
+}
+.sidebar-item:hover {
+  background-color: #c8cacc;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar-container {
+    /* CSS by Dinesh */
+    position: fixed;
+    height: 100%;
+    top: 30px;
+    width: 20%;
+    z-index: 10;
+    display:block;
+  }
+  .sidebar-scroll-container {
+    width: 100%;
+  }
+  .sidebar {
+    min-width: 200px;
+  }
+  .sidebar-item {
+    margin-bottom: 5px;
+    color: #12b76a;
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+  .sidebar-list{
+    margin:35px 0px;
+  }
+  .hideSideBar {
+    display: none;
+  }
+  .showSidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .sidebar {
+    min-width: 150px;
+  }
+}
